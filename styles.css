@@ -1,44 +1,158 @@
-.body{
-    background-color: #ffffff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
     color: #000000;
-    margin: 0;
 }
 
-.p{
-    margin: 0;
+html{
+    font-size: 60%;
+    scroll-behavior: smooth;
+    scroll-padding-top:  6rem;
+    overflow-x: hidden;
 }
 
-.header{
+body{
+ height: 100vh;
+ width: 100vw;
+}
+
+header{
     display: flex;
     height: 90px;
     align-items: center;
-    gap: 20%;
-
+    justify-content: space-between;
+    padding: 2.5% 15% 2.5% 5%;
 }
 
 .logo{
     display: flex;
     height: 30px;
     align-items: center;
-    gap: 20px;
-    margin-left: 5%;
+    gap: 20px;  
 }
 
-.imgTopo{
-    width: 30px;
-    height: 30px;
+.logo img{
+    width: 4rem;
+    height: 4rem; 
+}
 
+.logo a{
+    font-size: 2rem;
+    width: max-content;
+}
+
+.logo a:hover{
+    color: #c8b34a;
 }
 
 .topicos{
     display: flex;
     height: 23px;
-    gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.topicos a {
+    font-size: 1.5rem;
+    padding: 4rem;
+    width: max-content;
+    padding-left: 8rem;
     align-items: center;
 }
 
-.principal{
+.topicos a:hover,
+.topicos a:focus{
+    background: #4e9aa91b;
+    padding: 1rem;
+    margin: 5rem;
+    border-radius: .2rem;
+    color: cadetblue;
+}
+
+/*PRINCIPAL*/
+.cardPrincipal{
+    box-sizing:border-box;
     background-color: #ecf1f3;
-    height: 846px;
     display: flex;
+    gap: 12%;
+    width: 100vw;
+    height: 90vh ;  
+    align-items: center;
+    padding-right: 10%
+}
+
+.cardPrincipal img{
+    margin-left: 3%;
+    width: 45vw;
+    height: 140vh
+}
+
+.cardTextosP {
+    width: 25vw;
+    align-items: center;  
+}
+
+.cardTituloP{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 46px;
+    background-color: #4e9aa91b;
+    padding: 10px;
+    width: max-content;
+    max-width: 25vw;
+    font-size: 0.9rem;
+}
+
+.texto1TP{
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.chamadaP{
+    height: 70%;
+    color: #000000;
+    font-size: 5.5rem;
+    width: 25vw;
+    margin: 20px 0
+}
+
+.descricaoP{
+    width: 25vw;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 968px) {
+
+    .topicos a {
+        padding: 1rem;
+        padding-left: 4rem;
+        margin: 1rem ; /* Adiciona um espaçamento entre os tópicos na coluna */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .topicos a {
+        padding: 0.5rem;
+        padding-left: 2.5rem;
+        margin: 0.5rem ; /* Adiciona um espaçamento entre os tópicos na coluna */
+    }
 }
