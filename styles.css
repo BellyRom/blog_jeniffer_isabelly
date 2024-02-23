@@ -15,7 +15,12 @@ section{
 
 header{
     width: 100%;
-    padding: 28px 5%;
+    padding: 20px 5%;
+    position:fixed;
+    z-index: 1000;
+    background: white;
+    height: min-content;
+    box-shadow: 0px 2px 5px #ffe25151 ;
 }
 
 #navbar{
@@ -68,6 +73,7 @@ header{
     border-radius: .2rem;
     background: #4e9aa91b;
     color: rgb(62, 105, 106);
+    transition: all 2s ease-in-out;
 }
 
 .nav-item:hover a{
@@ -91,7 +97,7 @@ header{
     gap: 12%;
     align-items:center;
     background-color: #4e9aa91b;
-    height: calc(100vh - 96px);
+    height:100vh;
     width: 100%;
 
 }
@@ -317,14 +323,14 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        
     }
 
     #mobile_nav_list{
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin: 12px 0px
+        margin: 12px 0px;
     }
 
     #mobile_nav_list .nav-item{
@@ -337,8 +343,10 @@ header{
     #mobile_menu .nav-item.active a{
         padding: 1rem;
         border-radius: .2rem;
-        background: #4e9aa91b;
+       
         color: rgb(62, 105, 106);
+        transition: all 2s ease-in-out;
+        cursor: pointer;
     }
     
     #mobile_menu .nav-item:hover a{
@@ -358,7 +366,7 @@ header{
     
     #paginainicial img{
         width: 80%;
-        height: 50vh;
+        height: 60vh;
     }
 
     .cardTextosP {
@@ -440,6 +448,8 @@ header{
 
 @media screen and (max-width: 650px){
         /*novidades*/
+    
+    
         .card{
             display: flex;
             flex-direction: column;
