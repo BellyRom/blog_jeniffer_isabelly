@@ -1,59 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Padrao-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Blog </title>
-    <!--CSS-->
-    <link rel="stylesheet" href="styles.css">
-    <!--Icones-->
-    <link rel="icon" type="image/x-icon" href="./img/icone.png">
-    <!--Fonte Principal-->
-    <script src="https://kit.fontawesome.com/b59a72138d.js" crossorigin="anonymous"></script>
-</head>
-<body class="body">
+    <title>Star Blog</title>
 
+    <!-- Icone Tittle-->
+    <link rel="icon" type="image/x-icon" href="./img/icone.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonte Principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Fonte Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <!-- Icones -->
+    <script src="https://kit.fontawesome.com/b59a72138d.js" crossorigin="anonymous"></script>
+    <!--jqery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--remixcon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
     <!-- Header - Parte inicial -->
     <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="./img/icone.png"/>
+                <a href="#paginainicial"> STAR BLOG</a>
+            </div>
 
-        <div class="logo">
-            <img src="./img/icone.png"/>
-            <a href="#"> STAR BLOG</a>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#paginainicial"> PÁGINA INICIAL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#novidades"> NOVIDADES </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#top10"> TOP 10</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre"> SOBRE </a>
+                </li>
+            </ul>
+
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item active">
+                    <a href="#paginainicial"> PÁGINA INICIAL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#novidades"> NOVIDADES </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#top10"> TOP 10</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre"> SOBRE </a>
+                </li>
+            </ul>
         </div>
-
-        <div class="topicos">
-            <a href="#paginainicial"> PÁGINA INCIAL</a>
-            <a href="#novidades"> NOVIDADES </a>
-            <a href="#top10"> TOP 10</a>
-            <a href="#sobre"> SOBRE </a>
-        </div>
-
-
     </header>
 
     <!-- principal - Parte principal -->
-    <principal class="cardPrincipal">
+    <main id="content">
 
-        <img src="./img/hazbin.png" >
+        <!--seção inicial-->
+        <section id="paginainicial">
+            <img src="./img/hazbin.png" >
 
-        <div class="cardTextosP">
+            <div class="cardTextosP">
+                <div class="cardTituloP">
+                    <p class="texto1TP">NOVO CONTEÚDO</p>
+                    <p>SERÁ O TIPO DE INFORMAÇÃO : O NOME DO MATERIAL</p>
+                    <a><i class="fa-solid fa-arrow-right"></a></i>
+                </div>
 
-            <div class="cardTituloP">
-                <p class="texto1TP">NOVO CONTEÚDO</p>
-                <p>SERÁ O TIPO DE INFORMAÇÃO : O NOME DO MATERIAL</p>
-                <a><i class="fa-solid fa-arrow-right"></a></i>
+                <p class="chamadaP">Uma chamada tedenciosa sobre o assunto com poucas palavras</p>
+                <p class="descricaoP">
+                    Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>      
+        </section>
+
+        <!--seção meio-->    
+        <section id="novidades">
+            <h1>NOVIDADES</h1>
+
+            <!--primeira coluna-->
+            <div class="caixa-card-blog">
+                 <!--primeiro card-->
+                <div class="card">
+
+                    <img class="imagem" src="./img/Disney-Wish.jpg">
+
+                    <div class="card-lado">
+                            <div class="card-cima">
+                                <p class="categoria">CATEGORIA</p>
+                                <span class="date">Data de postagem</span>
+                            </div>
+
+                            <h2 class="card-title"> Lorem ipsum dolor sit. Lorem ipsum dolor sit.</h2>
+
+                            <div class="card-desc">
+                                Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+
+                            <div class="card-baixo">
+                                    <div class="avatar">
+                                        <img src="./img/hazbin.png">
+                                        <span class="username">Jeniffer Esther</span>
+                                    </div>
+                                <a href="#" class="readmore"> SAIBA MAIS</a>                    
+                            </div>
+                    </div>
+                </div>
+
+                <!--segundo card-->
+                <div class="card">
+
+                    <img class="imagem" src="./img/patos.jpg">
+
+                    <div class="card-lado">
+                            <div class="card-cima">
+                                <p class="categoria">CATEGORIA</p>
+                                <span class="date">Data de postagem</span>
+                            </div>
+
+                            <h2 class="card-title"> Lorem ipsum dolor sit. Lorem ipsum dolor sit.</h2>
+
+                            <div class="card-desc">
+                                Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+
+                            <div class="card-baixo">
+                                    <div class="avatar">
+                                        <img src="./img/hazbin.png">
+                                        <span class="username">Isabelly Romão</span>
+                                    </div>
+                                <a href="#" class="readmore"> SAIBA MAIS</a>                    
+                            </div>
+                    </div>
+                </div>
+                
             </div>
 
-            <p class="chamadaP">Uma chamada tendeciosa sobre o assunto com poucas palasvras</p>
-            <p class="descricaoP">
-                Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        
-    </principal>
 
-   
+            <!--segunda coluna-->
+            <div class="caixa-card-blog">
+                <!--primeiro card-->
+               <div class="card">
+
+                   <img class="imagem" src="./img/orion2.jpg">
+
+                   <div class="card-lado">
+                           <div class="card-cima">
+                               <p class="categoria">CATEGORIA</p>
+                               <span class="date">Data de postagem</span>
+                           </div>
+
+                           <h2 class="card-title"> Lorem ipsum dolor sit. Lorem ipsum dolor sit.</h2>
+
+                           <div class="card-desc">
+                               Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+
+                           <div class="card-baixo">
+                                   <div class="avatar">
+                                       <img src="./img/hazbin.png">
+                                       <span class="username">Isabelly Romão</span>
+                                   </div>
+                               <a href="#" class="readmore"> SAIBA MAIS</a>                    
+                           </div>
+                   </div>
+               </div>
+
+                <!--segundo card-->
+               <div class="card">
+
+                   <img class="imagem" src="./img/tigre.jpg">
+
+                   <div class="card-lado">
+                           <div class="card-cima">
+                               <p class="categoria">CATEGORIA</p>
+                               <span class="date">Data de postagem</span>
+                           </div>
+
+                           <h2 class="card-title"> Lorem ipsum dolor sit. Lorem ipsum dolor sit.</h2>
+
+                           <div class="card-desc">
+                               Uma descrição sobre o assunto, dissertando mais sobre, por exemplo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+
+                           <div class="card-baixo">
+                                   <div class="avatar">
+                                       <img src="./img/hazbin.png">
+                                       <span class="username">Jeniffer Esther</span>
+                                   </div>
+                               <a href="#" class="readmore">SAIBA MAIS</a>                    
+                           </div>
+                   </div>
+               </div>
+           </div> 
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
